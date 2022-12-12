@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "hydra"
+version = "0.1.0"
+description = "A multiprocess queue processor"
+authors = ["Ximit Gaia <im.ximit@gmail.com>"]
+readme = "README.md"
+packages = [
+    { include = "hydra"},
+    { include = "hydra/**/*.py" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+meeseeks-singleton = "^0.1.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest-asyncio = "^0.20.3"
+mutatest = "^3.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[project.urls]
+"Homepage" = "https://github.com/XimitGaia/hydra"
+"Bug Tracker" = "https://github.com/XimitGaia/hydra/issues"
